@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.projeto_teste_chave">
+    package="com.devmenthors.projeto_teste_chave">
    <application
         android:label="projeto_teste_chave"
         android:name="${applicationName}"
