@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:projeto_teste_chave/controller/AppOneSignalController.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,10 +34,19 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
+  final AppOneSignalController onesignal = AppOneSignalController();
 
 
   @override
+  void initState(){
+    configurePush();
+    super.initState();
+  }
+
+  void configurePush(){
+    onesignal.initPlatformState();
+  }
+
   Widget build(BuildContext context) {
 
     return Scaffold(
